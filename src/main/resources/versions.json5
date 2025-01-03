@@ -13,7 +13,7 @@
             "8.12"
         ],
         // renovate: datasource=maven depName=com.android.tools.build:gradle versioning=maven
-        "8.6.1": [
+        "8.6.0": [
             "8.12"
         ],
         // renovate: datasource=maven depName=com.android.tools.build:gradle versioning=maven
