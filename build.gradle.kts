@@ -163,7 +163,14 @@ tasks.test {
     }
 }
 
-getSupportedVersions().keys.forEach { androidVersion ->
+val latestVersion = providers.gradleProperty("org.gradle.android.latestKnownAgpVersion")
+val supportedVersions = getSupportedVersions()
+
+check(latestVersion in supportedVersions) {
+    "The project must be updated to support AGP $latestVersion. Please add it to supported versions."
+}
+
+supportedVersions.keys.forEach { androidVersion ->
     val versionSpecificTest = tasks.register<Test>(androidTestTaskName(androidVersion)) {
         description = "Runs the multi-version tests for AGP $androidVersion"
         group = "verification"
