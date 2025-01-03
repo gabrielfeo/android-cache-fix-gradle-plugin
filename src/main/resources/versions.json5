@@ -1,15 +1,15 @@
 {
     "supportedVersions": {
         // renovate: datasource=maven depName=com.android.tools.build:gradle versioning=maven
-        "8.9.0-alpha04": [
+        "8.9.0-alpha07": [
             "8.12"
         ],
         // renovate: datasource=maven depName=com.android.tools.build:gradle versioning=maven
-        "8.8.0-beta01": [
+        "8.8.0-rc02": [
             "8.12"
         ],
         // renovate: datasource=maven depName=com.android.tools.build:gradle versioning=maven
-        "8.7.2": [
+        "8.7.3": [
             "8.12"
         ],
         "8.6.1": [
