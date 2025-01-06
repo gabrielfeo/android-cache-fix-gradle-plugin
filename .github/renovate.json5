@@ -3,6 +3,9 @@
   "extends": [
     "config:recommended"
   ],
+  // Allow unlimited PRs
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
   // See https://docs.renovatebot.com/modules/manager/regex/
   // Dependabot is used for all other updates.
   "enabledManagers": ["regex"],
