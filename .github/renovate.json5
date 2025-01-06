@@ -32,8 +32,8 @@
       // New major/minor releases must be added manually as new properties.
       "matchDepNames": ["com.android.tools.build:gradle"],
       "matchFileNames": ["src/main/resources/versions\\.json5"],
-      "matchCurrentVersion": "(?<major>\\d+)\\.(?<minor>\\d+).*",
-      "allowedVersions": "/^{{major}}.{{minor}}.*/"
+      // e.g. for 8.6.2, allow only 8.6.x bumps
+      "allowedVersions": "/^{{{replace '(\\d+)\\.(\\d+)\\.' '$1\\.$2\\.' currentVersion}}}.*$/"
     },
   ],
 }
