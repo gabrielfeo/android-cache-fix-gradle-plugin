@@ -28,12 +28,11 @@
   ],
   "packageRules": [
     {
-      // In versions.json5, only allow bumps within current major/minor
-      // New major/minor releases must be added manually as new properties.
+      // In versions.json5, disable bumps of major/minor, which should be added as new properties
       "matchDepNames": ["com.android.tools.build:gradle"],
+      "matchUpdateTypes": ["major", "minor"],
       "matchFileNames": ["src/main/resources/versions\\.json5"],
-      "matchCurrentVersion": "(?<major>\\d+)\\.(?<minor>\\d+).*",
-      "allowedVersions": "/^{{major}}.{{minor}}.*/"
+      "enabled": false,
     },
   ],
 }
