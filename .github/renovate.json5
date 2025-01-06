@@ -33,7 +33,7 @@
       "matchDepNames": ["com.android.tools.build:gradle"],
       "matchFileNames": ["src/main/resources/versions\\.json5"],
       // e.g. for 8.6.2, allow only 8.6.x bumps
-      "allowedVersions": "/^{{{replace '(\\d+)\\.(\\d+)\\.' '$1\\.$2\\.' currentVersion}}}{{{log 'hello'}}}{{{log {{{replace '(\\d+)\\.(\\d+)\\.' '$1\\.$2\\.' currentVersion}}}}}}.*$/"
+      "allowedVersions": "/^{{{replace '(\\d+)\\.(\\d+)\\.' '$1\\.$2\\.' currentVersion}}}.*$/"
     },
   ],
 }
