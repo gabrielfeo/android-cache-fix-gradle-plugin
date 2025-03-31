@@ -14,7 +14,7 @@
       // Matches AGP versions in files with custom patterns
       customType: "regex",
       fileMatch: [
-        "src\/test\/resources\/versions\\.json",
+        "src\\/test\\/resources\\/versions\\.json",
         "gradle\\.properties",
       ],
       "matchStrings": [
